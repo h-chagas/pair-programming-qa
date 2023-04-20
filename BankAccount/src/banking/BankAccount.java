@@ -47,7 +47,7 @@ public class BankAccount {
 	
 	public void withdraw(double amount) {
 		if (amount <= 0) {
-			System.out.println("You don't have enough money to withdraw");
+			System.out.println("The amount to be withdranw must be more than zero");
 		} else {
 			this.balance -= amount;
 		}
