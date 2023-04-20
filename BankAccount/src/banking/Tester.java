@@ -17,6 +17,7 @@ public class Tester {
 		CurrentAccount c1 = new CurrentAccount("Jake", 5);
 		c1.withdraw(1005);
 		System.out.println(c1.balance());
+		System.out.println("C1 account number: " + c1.accountNumber());  
 		
 		SavingsAccount s1 = new SavingsAccount("Paul", 10);
 		s1.AddInterest();

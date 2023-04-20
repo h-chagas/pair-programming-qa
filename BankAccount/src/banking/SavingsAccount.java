@@ -2,7 +2,7 @@ package banking;
 
 class SavingsAccount extends BankAccount {
 	
-	static double interestRate = 0.02;
+	public static double interestRate = 0.02;
 	
 	//constructor
 	SavingsAccount(String name, double balance) {

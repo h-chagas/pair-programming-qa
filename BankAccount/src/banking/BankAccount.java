@@ -5,7 +5,7 @@ public class BankAccount {
 	//properties
 	private String name;
 	private int accountNumber;
-	public double balance;
+	protected double balance;
 	
 	//class variable
 	static int id = 100_000;
