@@ -5,7 +5,7 @@ public class BankAccount {
 	//properties
 	private String name;
 	private int accountNumber;
-	private double balance;
+	public double balance;
 	
 	//class variable
 	static int id = 100_000;
@@ -48,16 +48,14 @@ public class BankAccount {
 	public void withdraw(double amount) {
 		if (amount <= 0) {
 			System.out.println("The amount to be withdranw must be more than zero");
+		} else if (amount > balance) {
+			System.out.println("You cannot withdraw more than you have in your balance!");
 		} else {
 			this.balance -= amount;
 		}
 	}
 	
 
-	
-	
-	
-	
-	
-
 }
+
+
